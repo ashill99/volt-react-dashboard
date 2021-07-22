@@ -16,6 +16,8 @@ import ResetPassword from "./examples/ResetPassword";
 import Lock from "./examples/Lock";
 import NotFoundPage from "./examples/NotFound";
 import ServerError from "./examples/ServerError";
+import Users from "./Users";
+
 
 // documentation pages
 import DocsOverview from "./documentation/DocsOverview";
@@ -114,6 +116,7 @@ export default () => (
     <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />
     <RouteWithSidebar exact path={Routes.Transactions.path} component={Transactions} />
     <RouteWithSidebar exact path={Routes.Settings.path} component={Settings} />
+    <RouteWithSidebar exact path={Routes.Users.path} component={Users} /> {/* register this new route */}
     <RouteWithSidebar exact path={Routes.BootstrapTables.path} component={BootstrapTables} />
 
     {/* components */}
